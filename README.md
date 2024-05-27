@@ -25,7 +25,7 @@ Place your solution in the appropriate directory based on your chosen language:
 ## Requirements
 ### Input
 - You have to calculate the total balance of the addresses generated from the descriptor: `wpkh(tpubD6NzVbkrYhZ4XgiXtGrdW5XDAPFCL9h7we1vwNCpn8tGbBcgfVYjXyhWo4E1xkh56hjod1RhGjxbaTLV3X4FyWuejifB9jusQ46QzG87VKp/*)`.
-- Esplora API is available locally on: `https://localhost:8094/regtest/api/`. Read the [Esplora API documentation](https://github.com/Blockstream/esplora/blob/master/API.md) for more information.
+- After running the `docker-compose`, Esplora API will be available locally on: `https://localhost:8094/regtest/api/`. Read the [Esplora API documentation](https://github.com/Blockstream/esplora/blob/master/API.md) for more information and the specific API calls you will need. See the instructions below for running `docker-compose`.
 
 ### Output
 Your script must generate an output file named `out.txt` with a single line containing the total balance of the addresses in Bitcoin (BTC).
@@ -38,6 +38,8 @@ To test your solution locally:
 If your code works, you will see the test completed successfully.
 
 ### Running Esplora Locally
+The `./data` folder contains the blocks with the required transactions that you need to fetch via esplora.
+The `docker-compose.yaml` file contains the necessary scripts to run a `bitcoind` and `esplora` node with the block files.
 
 To start Esplora locally, run the following command:
 ```
