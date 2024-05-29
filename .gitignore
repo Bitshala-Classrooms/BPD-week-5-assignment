@@ -11,3 +11,4 @@
 /data/regtest/fee_estimates.dat
 /data/regtest/mempool.dat
 /data/regtest/wallets
+/tmp-data/

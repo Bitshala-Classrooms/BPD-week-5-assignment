@@ -43,14 +43,12 @@ The `docker-compose.yaml` file contains the necessary scripts to run a `bitcoind
 
 To start Esplora locally, run the following command:
 ```
-cp -r ./data ./tmp-data
-docker compose up -d
+/bin/bash start-esplora.sh
 ```
 
 To stop Esplora, run the following command:
 ```
-rm -rf ./tmp-data
-docker compose down -v
+/bin/bash stop-esplora.sh
 ```
 
 ## Evaluation Criteria
