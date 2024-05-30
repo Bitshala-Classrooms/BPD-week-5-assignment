@@ -33,8 +33,8 @@ Your script must generate an output file named `out.txt` with a single line cont
 ## Execution
 To test your solution locally:
 - Uncomment the line corresponding to your language in [run.sh](./run.sh).
-- Set execution permission: `chmod +x ./test.sh`.
-- Execute [`test.sh`](./test.sh).
+- Set execution permission: `chmod +x ./local.sh`.
+- Execute [`local.sh`](./local.sh).
 
 If your code works, you will see the test completed successfully.
 
