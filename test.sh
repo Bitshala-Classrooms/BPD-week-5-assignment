@@ -3,6 +3,7 @@ cp -r ./data ./tmp-data
 
 # Spawn Bitcoind, and provide execution permission.
 docker compose up -d
+sleep 10
 chmod +x ./bash/run-bash.sh
 chmod +x ./python/run-python.sh
 chmod +x ./javascript/run-javascript.sh

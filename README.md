@@ -33,13 +33,14 @@ Your script must generate an output file named `out.txt` with a single line cont
 ## Execution
 To test your solution locally:
 - Uncomment the line corresponding to your language in [run.sh](./run.sh).
-- Execute [`local.sh`](./local.sh).
+- Set execution permission: `chmod +x ./test.sh`.
+- Execute [`test.sh`](./test.sh).
 
 If your code works, you will see the test completed successfully.
 
 ### Running Esplora Locally
 The `./data` folder contains the blocks with the required transactions that you need to fetch via esplora.
-The `docker-compose.yaml` file contains the necessary scripts to run a `bitcoind` and `esplora` node with the block files.
+The `docker-compose.yaml` file contains the necessary scripts to run a `bitcoind` and `esplora` node with the block files. You can locally start/stop the esplora server while writing your solution.
 
 To start Esplora locally, run the following command:
 ```
