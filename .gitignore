@@ -1,14 +1,2 @@
 /node_modules/
-/data/regtest/**/*.log
-/data/bitcoin.conf
-/data/regtest/settings.json
-/data/regtest/peers.dat
-/data/regtest/bitcoind.pid
-/data/regtest/.cookie
-/data/regtest/.lock
-/data/regtest/banlist.json
-/data/regtest/anchors.dat
-/data/regtest/fee_estimates.dat
-/data/regtest/mempool.dat
-/data/regtest/wallets
 /tmp-data/

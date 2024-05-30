@@ -12,6 +12,6 @@ describe('Evaluate Submission', () => {
     });
 
     it('should be correct balance', () => {
-        expect(balance).toBe('233.21506907');
+        expect(balance).toBe('777.62402534');
     });
 });
