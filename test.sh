@@ -9,6 +9,8 @@ for i in {1..24}; do
   curl --fail -X GET http://localhost:8094/regtest/api/blocks/tip/height && break || sleep 1
 done
 
+set -e  # Exit immediately if any command fails
+
 chmod +x ./bash/run-bash.sh
 chmod +x ./python/run-python.sh
 chmod +x ./javascript/run-javascript.sh
