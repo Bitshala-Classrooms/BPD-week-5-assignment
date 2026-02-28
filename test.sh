@@ -11,6 +11,14 @@ for i in {1..24}; do
   curl --fail -X GET http://localhost:8094/regtest/api/blocks/tip/height && break || sleep 1
 done
 
+cleanup() {
+  exit_code=$?
+  docker compose down -v
+  rm -rf ./tmp-data
+  exit $exit_code
+}
+trap cleanup EXIT
+
 set -e  # Exit immediately if any command fails
 
 chmod +x ./bash/run-bash.sh
@@ -22,7 +30,3 @@ chmod +x ./run.sh
 # Run the test scripts
 /bin/bash run.sh
 npm run test
-docker compose down -v
-
-# Remove the temporary directory
-rm -rf ./tmp-data
