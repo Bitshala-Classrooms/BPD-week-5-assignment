@@ -1,5 +1,7 @@
 cp -r ./data ./tmp-data
 docker compose up -d
+mkdir -p logs
+docker compose logs -f > logs/docker.log 2>&1 &
 
 # wait for esplora to be ready
 for i in {1..24}; do

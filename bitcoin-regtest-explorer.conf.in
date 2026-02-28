@@ -18,7 +18,7 @@ txindex=1
 
 # [debug]
 # Enable debug logging for all categories.
-debug=1
+debug=0
 # Log IP Addresses in debug output.
 logips=1
 
